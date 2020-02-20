@@ -1,5 +1,8 @@
 import * as profiles from '../../data/profiles.json'
 
 export default (req, res) => {
-    res.status(200).json(profiles)
+    setTimeout(() => {
+        res.status(200).json(profiles)
+        
+    }, 5000);
 }
